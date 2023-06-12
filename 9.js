@@ -5,7 +5,7 @@
  * @author yuheng
  * @create 20230522
  * @version 1.0.0
-******************************************/
+******************************************
 
 [mitm]
 hostname = 91porn.com
@@ -13,7 +13,7 @@ hostname = 91porn.com
 [rewrite_local]
 ^http[s]?:\/\/91porn\.com\/show_comments2\.php\?VID=\d+ url script-response-body https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/91porn.js
 
-/******************************************/
+******************************************/
 const scriptName = '91porn';
 const $ = new Env(scriptName);
 const id = $request.url.match(/VID=(\d+)/)[1];
